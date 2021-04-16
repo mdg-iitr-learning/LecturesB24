@@ -1,0 +1,6 @@
+Commands(s):
+cat /etc/bandit_pass/bandit14
+echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000
+
+Password:
+BfMYroe26WYalil77FoDi9qh59eK5xNr
