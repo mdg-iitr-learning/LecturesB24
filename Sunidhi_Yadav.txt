@@ -1,0 +1,21 @@
+Level 1 password - boJ9jbbUNNbfktd78OOpsqOltutMc3MY1
+Level 2 password - CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+Level 3 password - UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+Level 4 password - pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+Level 5 password - koReBOKuIDDepwhWk7jZC0RTdopnAYKh (used cat < '-file07')
+Level 6 password - DXjZPULLxYr17uwoI01bNLQbtFemEgo7 (find . -size 1033c)
+Level 7 password - HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs (first used cd .. to go to home directory then used find / -size 33c -user bandit7 -group bandit6)
+Level 8 password - cvX2JJa4CFALtqS87jk27qwqGhBM9plV (grep millionth data.txt)
+Level 9 password - UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR (cat data.txt | sort | uniq -c)
+Level 10 password - truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk ( strings data.txt)
+Level 11 password - IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR ( base64 -d data.txt)
+Level 12 password - 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu (cat data.txt | tr 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM')
+Level 13 password - 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL (zcat, bzcat, zcat, tar -xOf, tar -xOf,bzcat, tar -xOf, zcat commands used after checking the file using -file after evey step)
+Level 14 password - 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e (used sshkey.private from bandit13 to log into bandit 14 then from there accessed the file bandit14)
+Level 15 password - BfMYroe26WYalil77FoDi9qh59eK5xNr (used nc -v -n 127.0.0.1 30000)
+
+
+
+
+
+
