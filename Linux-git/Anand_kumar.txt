@@ -1,0 +1,118 @@
+Level 0:
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+password – bandit0
+Level 0 → Level 1:
+pwd  output: /home/bandit0
+ls -la
+cat readme  output: boJ9jbbUNNfktd78OOpsqOltutMc3MY1 (password for bandit1)
+exit
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+password – boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+Level 1 → Level  2:
+ls -la
+cat ./-  output: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+exit
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+password – CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+Level 2 → Level  3:
+ls -la
+cat spaces\ in\ this\ filename  output: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+exit
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+password – UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+Level 3 → Level  4:
+ls -la
+cd inhere/
+ls -la
+cat .hidden  Output: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+exit
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+password - pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+Level 4 → Level  5:
+ls -la
+cd inhere/
+ls -la
+file ./*|grep “text”  Output: ./-file07: ASCII text
+cat ./-file07  output: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+exit
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+password: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+Level 5 → Level  6:
+ls -la
+find -size 1033c ! -executable -exec file {} + | grep “text”  ./maybehere07/.file2
+cd maybehere07/
+cat .file2  DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+exit
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+Level 6 → Level  7:
+cd /
+find -group bandit6 -user -bandit7 -size 33c
+cd ./var/lib/dpkg/info/
+cat bandit7.password HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+exit
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+password: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+Level 7 → Level  8:
+grep -n -w “millionth” data.txt  37262: millionth cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+exit
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+password: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+Level 8 → Level  9:
+sort data.txt | uniq -u
+exit
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+password: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+Level 9 → Level  10:
+strings data.txt | grep “=”
+exit
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+password: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+Level 10 → Level  11:
+base64 --decode data.txt
+exit
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+password: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+Level 11 → Level  12:
+ls -la
+cat data.txt | tr a-z n-za-m | tr A-Z N-ZA-M
+exit
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+password: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+Level 12 → Level  13:
+ls -la
+mkdir /tmp/anand123
+cp data.txt /tmp/anand123
+xxd -r data.txt data1
+file data1
+mv data1 data1.gz
+gzip -d data1.gz
+file data1
+mv data1 data1.bz2
+bzip2 -d data1.bz2
+file data1
+mv data1 data1.gz
+gzip -d data1.gz
+file data1
+tar -xvf data1
+file data5.bin
+tar -xvf data5.bin
+file data6.bin
+mv data6.bin data7.bz2
+bzip2 -d data7.bz2
+file data7
+tar -xvf data7
+file data8.bin
+mv data8.bin data9.gz
+gzip -d data9.gz
+file data9
+cat data9
+exit
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+password: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+Level 13 → Level  14:
+ls -la
+ssh -i sshkey.private bandit14@localhost
+Level 14 → Level  15:
+cat /etc/bandit_pass/bandit14  output: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc localhost 30000                                         output:  BfMYroe26WYalil77FoDi9qh59eK5xNr
