@@ -1,0 +1,77 @@
+Level 0: 
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+Level 1:
+cat readme 
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level 2:
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+cd ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Level 3:
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+cat "spaces in this filename"
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Level 4:
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -a
+cat .hidden  
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB  
+
+Level 5:
+cat./-filename   or file ./-file*
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Level 6:
+find ./ -size 1033c
+cat maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Level 7:
+find / -size 33c  -user bandit7  -group bandit6
+cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Level 8:
+cat data.txt | grep millionth
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Level 9:
+sort data.txt | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+Level 10:
+cat data.txt  or  strings data.txt | grep '='
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Level 11:
+base64 -d data.txt
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Level 12:
+cat data.txt | tr '[a-z]' '[n-za-m]' | tr '[A-Z]' '[N-ZA-M]'
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+Level 13:
+mkdir /tmp/dm123
+cd /tmp/dm123
+cp data.txt /tmp/dm123
+xxd -r data.txt data     mv data data.gz     gzip -d data.gz     mv data data.bz2      bzip2 -d data.bz2     mv data data.gz      gzip -d data.gz     mv data data.tar     tar xvf data.tar
+mv data5.bin data5.tar     tar xvf data5.tar     mv data6.bin data6.tar     tar xvf data6.tar     mv data8.bin data8.gz      gzip -d data8.gz
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Level 14:
+ssh -i sshkey.private bandit14@localhost
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+Level 15:
+nc localhost 30000 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+Level 16:
+openssl s_client -connect localhost:30001
+cluFn7wTiGryunymYOu4RcffSxQluehd
