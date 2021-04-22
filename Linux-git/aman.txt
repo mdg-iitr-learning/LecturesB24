@@ -1,0 +1,147 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+bandit0
+cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+exit
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+exit
+
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+cat spaces\ in\ this\ filename
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+exit
+
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+ls
+cd inhere
+ls -all
+cat .hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+exit
+
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+ls
+cd inhere
+file ./-file*
+cat ./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+exit
+
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+ls
+cd inhere
+find ./ -size 1033c
+cat ./maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+exit
+
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+find / -size 33c -user bandit7 -group bandit6
+cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+exit
+
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+ls
+cat data.txt | grep -i millionth
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+exit
+
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+ls
+sort data.txt | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+exit
+
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+strings data.txt | grep '='
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+exit
+
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+base64 -d data.txt
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+exit
+
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+ls
+cat data.txt | tr '[a-z][A-Z]' '[n-za-m][N-ZA-M]'
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+exit
+
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+ls
+mkdir -v /tmp/aman123
+xxd -r data.txt /tmp/aman123/data.txt
+cd /tmp/aman123
+ls
+file data.txt
+zcat data.txt > new
+ls
+file new
+bzip2 -d new
+ls
+file new.out
+zcat new.out > newer
+ls
+file newer
+tar -xvf newer
+file data5.bin
+tar -xvf data5.bin
+file data6.bin
+bzip2 -d data6.bin
+ls
+file data6.bin.out
+tar -xvf data6.bin.out
+file data8.bin
+zcat data8.bin > newest
+file newest
+cat newest
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+exit
+
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+ls
+ssh -i sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+nc localhost 30000
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+exit
+exit
+
+------------------------------------------------
+Passwords
+bandit0: bandit0
+bandit1: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+bandit2: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+bandit3: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+bandit4: pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+bandit5: koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+bandit6: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+bandit7: HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+bandit8: cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+bandit9: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+bandit10: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+bandit11: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+bandit12: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+bandit13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+bandit14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+bandit15: BfMYroe26WYalil77FoDi9qh59eK5xNr

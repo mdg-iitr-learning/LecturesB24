@@ -1,0 +1,41 @@
+START)  Just connect using SSH command
+LVL 0)  Use ls, then cat readme
+        boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+LVL 1)  use cat < - or cat ./- (when in the same directory as the file named -) so as to avoid being treated as a stdin/stdout
+        CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+LVL 2)  Just cat and use <tab> button for auto-completion, or just enclose it in quotes
+        UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+LVL 3)  Just use ls -la to see all the files and then use cat with the name of the hidden file!
+        pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+LVL 4)  Open each file in same manner as in <LVL 1> and see which has human readable format
+        koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+LVL 5)  Use find command to get a file of size 1033 bytes and is not executable, find ./ -type f -size 1033c
+        DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+LVL 6)  Again use find, find / -size 33c -user bandit7 -group bandit6 , then see the file which was accessed and shown in the list
+        HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+LVL 7)  Use cat data.txt | grep millionth
+        cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+LVL 8)  Use sort data.txt | uniq -n | grep 1 and then look for 1 among the numbers displayed due to -n property of uniq
+        UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+LVL 9)  Use grep with -a to treat binary as text, grep -a -e ==== | strings , use the last strings to convert the output binary to strings and copy them
+        truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+LVL 10) Given that the file is base 64 encrypted, use base64 -d data.txt
+        IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+LVL 11) use the tr tool to decrypt the ROT13 encrpytion, cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+        5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+LVL 12) after reverse hexdump using xxd -r data.txt
+        after that convert unzip gzip by gzip -d [filename]
+        for bzip2 using bzip2 -d [filename]
+        for POSIX tar file use tar xvf [filename]
+        to see the kind of file use file [filename]
+        8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+LVL 13) After logging into level 13.
+        use teh private key provided as seperate identity and login to bandit14 username and get the key
+        ssh -i sshkey.private bandit14@localhost
+        4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+LVL 14) Connect to localhost's port 30000 , using either telnet or nc 
+        once connected , give it the password of LVL14.
+        BfMYroe26WYalil77FoDi9qh59eK5xNr
+LVL 15) use openssl s_client -connect localhost:300001
+        and then enter above password
+        cluFn7wTiGryunymYOu4RcffSxQluehd
