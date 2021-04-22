@@ -1,0 +1,5 @@
+Commands(s):
+base64 -d data.txt
+
+Password:
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
