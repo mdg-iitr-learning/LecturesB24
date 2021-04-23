@@ -1,0 +1,6 @@
+Commands(s):
+cd inhere
+cat .hidden
+
+Password:
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
