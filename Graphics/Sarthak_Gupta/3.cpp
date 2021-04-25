@@ -33,3 +33,7 @@ int main(){
 	
 	ofs.close();
 }
+
+/* Made use of ray and uderstood how to use eye/camera and how to move form point to point using ray
+also addeda function to ray.h to suit my use case scenario
+*/
