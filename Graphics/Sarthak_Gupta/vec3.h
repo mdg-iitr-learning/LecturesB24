@@ -137,9 +137,21 @@ inline vec3& vec3::operator/=(const float t) {
 	e[2] *= k;
 }
 
+inline vec3 reflect(const vec3& v , const vec3& n ) {
+	return v -2*dot(v,n)*n;
+}
+
 inline vec3 unit_vector(vec3 v){
 	return v/v.length();
 } 
+
+inline vec3 random_in_unit_sphere() {
+	vec3 p;
+	do{
+		p = 2.0*vec3(float(rand() % 1000) / float(1000), float(rand() % 1000) / float(1000) , float(rand() % 1000) / float(1000)) - vec3(1,1,1);
+	} while (p.square_length() >= 1.0);
+	return p;
+}
 
 
 /* Understood to a degree how we can and should make use of classes and how other classes like numpy maybe implemented under the hood
