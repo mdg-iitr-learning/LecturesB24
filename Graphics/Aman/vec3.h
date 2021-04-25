@@ -23,7 +23,7 @@ class vec3 {
         inline vec3& operator*= (const vec3 &v2);
         inline vec3& operator/= (const vec3 &v2);
         inline vec3& operator*= (const float t);
-        //inline vec3& operator/= (const float t);
+        inline vec3& operator/= (const float t);
 
         inline float length() const {
             return sqrt( e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);
@@ -125,13 +125,13 @@ inline vec3& vec3::operator*=(const float t){
     return *this;
 }
 
-/*inline vec3& vec3::operator/=(const float t){
+inline vec3& vec3::operator/=(const float t){
     float k= 1.0/t;
     e[0]*=k;
     e[1]*=k;
     e[2]*=k;
     return *this;
-}*/
+}
 
 inline vec3 unit_vector(vec3 v){
     float k = 1.0/v.length();
