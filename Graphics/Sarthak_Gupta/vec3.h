@@ -36,6 +36,11 @@ class vec3{
 			return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
 		}
 		inline void make_unit_vector();
+		
+		inline vec3 toColor(){
+	        return vec3(int(255.99*(e[0])) , int(255.99*(e[1])) , int(255.99*(e[2])) );
+        } 
+
 		float e[3];
 };
 
@@ -135,6 +140,7 @@ inline vec3& vec3::operator/=(const float t) {
 inline vec3 unit_vector(vec3 v){
 	return v/v.length();
 } 
+
 
 /* Understood to a degree how we can and should make use of classes and how other classes like numpy maybe implemented under the hood
 also saw how references are used in such cases
