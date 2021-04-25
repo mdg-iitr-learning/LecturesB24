@@ -14,7 +14,7 @@ using namespace std;
 int main(){
 	int npx = 200;
 	int npy = 100;
-	ofstream ofs("test.ppm", ios::out | ios::app);
+	ofstream ofs("first.ppm", ios::out | ios::app);
 	ofs<<"P3 \n"<<npx<<" "<<npy<<"\n255"<<endl;
 	for(int j = 0 ; j<npy ; j++ ){
 		for(int i = 0 ; i<npx ; i++){
@@ -24,6 +24,8 @@ int main(){
 			ofs<<frac_to_rgb(r) << " " << frac_to_rgb(g) << " " << frac_to_rgb(b)<<endl;
 		}
 	}
+	
+	ofs.close();
 }
 
 /* Played around with the loops to see what and how i can influence the actal image output,8 
