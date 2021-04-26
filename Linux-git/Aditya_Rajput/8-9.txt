@@ -1,0 +1,5 @@
+Commands(s):
+cat data.txt | sort | uniq -c
+
+Password:
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR

@@ -1,0 +1,33 @@
+Commands(s):
+mkdir /tmp/A_R
+cp data.txt /tmp/A_R
+xxd -r data.txt > data
+file data
+mv data data2.gz
+gzip -d data2.gz
+file data2
+mv data2 data3.bz
+bzip2 -d data3.bz
+file data3
+mv data3 data4.gz
+gzip -d data4.gz
+file data4
+mv data4 data5.tar
+tar -xf data5.tar
+file data5.bin
+mv data5.bin data6.tar
+tar -xf data6.tar
+file data6.bin
+mv data6.bin data7.bz
+bzip2 -d data7.bz
+file data7
+mv data7 data8.tar
+tar -xf data8.tar
+file data8.bin
+mv data8.bin data9.gz
+gzip -d data9.gz
+file data9
+cat data9
+
+Password:
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL

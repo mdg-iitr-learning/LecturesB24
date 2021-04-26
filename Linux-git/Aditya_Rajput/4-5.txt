@@ -1,0 +1,7 @@
+Commands(s):
+cd inhere
+file ./*
+cat ./-file07
+
+Password:
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh

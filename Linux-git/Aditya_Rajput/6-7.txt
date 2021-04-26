@@ -1,0 +1,6 @@
+Commands(s):
+find / -user bandit7 -group bandit6
+cat /var/lib/dpkg/info/bandit7.password
+
+Password:
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs

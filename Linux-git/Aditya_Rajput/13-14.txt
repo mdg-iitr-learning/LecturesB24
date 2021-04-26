@@ -1,0 +1,5 @@
+Commands(s):
+ssh bandit14@localhost -i sshkey.private
+
+Password:
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
