@@ -137,13 +137,14 @@ inline vec3& vec3::operator/=(const float t) {
 	e[2] *= k;
 }
 
-inline vec3 reflect(const vec3& v , const vec3& n ) {
-	return v -2*dot(v,n)*n;
-}
+
+
 
 inline vec3 unit_vector(vec3 v){
 	return v/v.length();
 } 
+
+
 
 inline vec3 random_in_unit_sphere() {
 	vec3 p;
